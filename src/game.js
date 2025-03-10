@@ -23,3 +23,11 @@ function startGame() {
     initBoard();
     updateGameInfo();
 }
+
+// Mettre à jour les informations du jeu
+function updateGameInfo() {
+    playerInfo.innerHTML = '';
+    players.forEach((player, index) => {
+        playerInfo.innerHTML += `${player.name}: ${player.position} <br>`;
+    });
+}
