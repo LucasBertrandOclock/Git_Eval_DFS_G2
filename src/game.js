@@ -1,3 +1,4 @@
+// Script de jeu
 // Variables
 let players = [];
 let currentPlayerIndex = 0;
