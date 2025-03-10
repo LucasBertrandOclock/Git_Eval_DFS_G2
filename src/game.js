@@ -31,3 +31,11 @@ function updateGameInfo() {
         playerInfo.innerHTML += `${player.name}: ${player.position} <br>`;
     });
 }
+// Événements
+rollButton.addEventListener('click', () => {
+    if (gameStarted) {
+        rollDice();
+    }
+});
+
+startButton.addEventListener('click', startGame);
